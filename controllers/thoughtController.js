@@ -1,4 +1,5 @@
-const { Thought, User } = require('../models');
+const  Thought  = require('../models/Thought');
+const  User = require('../models/User');
 
 const thoughtController = {
   getAllThoughts(req, res) {
@@ -113,8 +114,8 @@ const thoughtController = {
 
   deleteReaction(req, res) {
     Thought.findByIdAndUpdate(
-      { _id: req.params.thoughtId },
-      { $pull: { reactions: { _id: req.params.reactionId } } },
+      req.params.thoughtId ,
+      { $pull: { reactions: { reactionId: req.params.reactionId } } },
       { new: true }
     )
       .then((dbThoughtData) => {

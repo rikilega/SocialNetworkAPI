@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js",
-    "dev": "nodemon app.js"
+    "dev": "nodemon app.js",
+    "seed": "node seeds/seed.js",
+    "seed-and-start": "npm run seed && npm start"
   },
   "dependencies": {
   "express": "^4.18.2",

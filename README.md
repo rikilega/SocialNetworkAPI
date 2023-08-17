@@ -125,5 +125,5 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ## Author
 
-Richard Aspinall. See github [@rikilega](https://github.com/rikilega)
+Richard Aspinall. See github [@rikilega](https://github.com/rikilega). To view code see project repo [here](https://github.com/rikilega/SocialNetworkAPI).
 
